@@ -1,5 +1,8 @@
-FROM java:8  
+FROM maven:3.5.2-jdk-8
 
-# set the working directory in the container
-WORKDIR /opt/app/DocumentSummarizer/src/docsum
+WORKDIR /opt/app/DocumentSummarizer/src/
 
+# COPY src /src
+
+# RUN javac experiment/runme.java
+# CMD java experiment/runme
